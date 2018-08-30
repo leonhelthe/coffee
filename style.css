@@ -31,7 +31,7 @@ nav{
    display: none;
 }
 /* Main */
-main{
+#main{
    display: grid; grid-template-columns: 1fr; grid-gap: 50px;
 }
 /* Banner */
@@ -106,8 +106,82 @@ footer{
       padding: 0;
    }
 }
-
-
+/*============================================================================================*/
+/*========================================= Menu Page ========================================*/
+/*============================================================================================*/
+/* Main */
+#menu-main{
+   display: grid; grid-template-columns: 1fr;
+}
+/* Banner */
+.menu-banner{
+   width: 100%; height: 100vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/menubanner.jpeg"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+.menu-banner-wrap{
+   margin: 0 auto; max-width: 960px; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.menu-banner-wrap > h1{
+   font-size: 2.4rem; color: #fff; padding: 20px; margin-top: 50px;
+}
+/* Espresso */
+.menu-espresso-wrap{
+   display: grid; grid-template-columns: 1fr;
+}
+.menu-espresso-box{
+   width: 100%; height: 280px; display: grid; grid-template-columns: 1fr 1fr; padding: 20px;
+}
+.menu-espresso-text{
+   display: flex; flex-direction: column; justify-content: center;
+}
+.menu-espresso-text > h1{
+   font-size: 1.8rem; margin-bottom: 10px;
+}
+.menu-espresso-text > a{
+   font-size: 1.3rem; text-decoration: none; color: #fff; background: #333; border: solid 2px #333;; padding: 5px; text-align: center; width: 130px;
+}
+#espresso-0{
+   background-image: url("images/1.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-1{
+   background-image: url("images/2.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-2{
+   background-image: url("images/3.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-3{
+   background-image: url("images/4.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-4{
+   background-image: url("images/5.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-5{
+   background-image: url("images/6.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-6{
+   background-image: url("images/7.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-7{
+   background-image: url("images/8.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-8{
+   background-image: url("images/9.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+#espresso-9{
+   background-image: url("images/10.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+@media(min-width:700px) {
+   .menu-espresso-wrap{
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+   }
+   .menu-banner-wrap > h1{
+      font-size: 4rem; color: #fff; padding: 20px;
+   }
+}
+@media(min-width:960px) {
+   .menu-espresso-box{
+      padding: 50px;
+   }
+}
 
 
 

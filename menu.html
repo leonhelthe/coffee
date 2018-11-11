@@ -1,99 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
-      <title>Espresso/Drinks - Shakky's Cafe</title>
-      <link rel="icon" href="images/logo.png">
-      <link rel="stylesheet" href="style.css">
+      <title>Shakky's Cafe</title>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="device=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="images/">
    </head>
    <body>
-      <header id="header">
+      <header>
          <nav>
-            <div class="nav-icon">
-               <a href="index.html"><img src="images/logo.png" id="logo"></a>
-               <img src="images/burger.png" id="burger">
-            </div>
-            <ul id="nav">
+            <ul class="nav-left">
                <li><a href="menu.html">Menu</a></li>
                <li><a href="#">Gift Cards</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Contact</a></li>
             </ul>
-            <ul id="nav-mobile">
-               <li><a href="#">Menu</a></li>
-               <li><a href="#">Gift Cards</a></li>
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            <ul class="nav-right">
                <li><a href="#">About</a></li>
-               <li><a href="#">Contact</a></li>
+               <li><a href="#">Location</a></li>
             </ul>
          </nav>
       </header>
-      <main id="menu-main">
+      <main class="main-menu">
          <section class="menu-banner">
             <div class="menu-banner-wrap">
-               <h1>Espresso/Coffee and Other Drinks</h1>
+               <h1>Shakky's Cafe Menu</h1>
             </div>
          </section>
-         <section class="menu-espresso">
-            <div class="menu-espresso-wrap">
-               <div class="menu-espresso-box" id="espresso-0">
-                  <div class="menu-espresso-text">
-                     <h1>Cold Brew Frozen Coffee</h1>
-                     <a href="#">Learn More</a>
+         <section class="menu-items">
+            <div class="menu-items-wrap">
+               <div class="menu-blocks">
+                  <div class="menu-block">
+                     <img src="images/espresso.png">
+                     <div class="menu-block-text">
+                        <h2>Espresso</h2>
+                        <p>Available in 12oz (2 shots), 16oz (2 shots),and 20oz (4 shots) &bullet; Can be made iced in 16oz and 20oz sizes &bullet; Decaf espresso also available</p>
+                        <a href="espresso.html">Learn More</a>
+                     </div>
                   </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-1">
-                  <div class="menu-espresso-text">
-                     <h1>Cold Brew Frappe</h1>
-                     <a href="#">Learn More</a>
+                  <div class="menu-block">
+                     <div class="menu-block-text">
+                        <h2>Brewed Coffee</h2>
+                        <p>Available in 12oz, 16oz, and 20oz &bullet; Can be made iced in 16oz and 20oz.</p>
+                        <a href="brewed.html">Learn More</a>
+                     </div>
+                     <img src="images/brewed-menu.jpg">
                   </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-2">
-                  <div class="menu-espresso-text">
-                     <h1>Caramel Macchiato</h1>
-                     <a href="#">Learn More</a>
+                  <div class="menu-block">
+                     <img src="images/kids-menu.jpg">
+                     <div class="menu-block-text">
+                        <h2>Kid's Menu</h2>
+                        <p>Available in 8oz size (hot, but made a little cooler) or 12oz (iced)</p>
+                        <a href="kids-menu.html">Learn More</a>
+                     </div>
                   </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-3">
-                  <div class="menu-espresso-text">
-                     <h1>Iced Caramel Macchiato</h1>
-                     <a href="#">Learn More</a>
-                  </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-4">
-                  <div class="menu-espresso-text">
-                     <h1>Cappuccino</h1>
-                     <a href="#">Learn More</a>
-                  </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-5">
-                  <div class="menu-espresso-text">
-                     <h1>Caramel Cappuccino</h1>
-                     <a href="#">Learn More</a>
-                  </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-6">
-                  <div class="menu-espresso-text">
-                     <h1>Fresh Vanilla Cappuccino</h1>
-                     <a href="#">Learn More</a>
-                  </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-7">
-                  <div class="menu-espresso-text">
-                     <h1>Mocha</h1>
-                     <a href="#">Learn More</a>
-                  </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-8">
-                  <div class="menu-espresso-text">
-                     <h1>Iced Mocha</h1>
-                     <a href="#">Learn More</a>
-                  </div>
-               </div>
-               <div class="menu-espresso-box" id="espresso-9">
-                  <div class="menu-espresso-text">
-                     <h1>Caramel Mocha</h1>
-                     <a href="#">Learn More</a>
+                  <div class="menu-block">
+                     <div class="menu-block-text">
+                        <h2>Food</h2>
+                        <p>We feature a large variety of sweet and savory things to dine or snack on - everything from fresh salads & sandwiches, burritos, and tasty pastries - all from quality local bakeries, delis, and other providers that use natural ingredients. We also have gluten free and vegetarian items as well.</p>
+                        <a href="#">Learn More</a>
+                     </div>
+                     <img src="images/food.jpg">
                   </div>
                </div>
             </div>
@@ -101,7 +68,7 @@
       </main>
       <footer>
          <div class="footer-wrap">
-            <p>&copy; 2018 Shakky's Cafe &bullet; Metro, Manila</p>
+            <p>&copy; 2018 Shakky's Cafe &bullet; Santa Cruz, Manila</p>
          </div>
       </footer>
    </body>

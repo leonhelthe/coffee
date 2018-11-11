@@ -1,189 +1,201 @@
 /* Default */
 *{
-   margin: 0; padding: 0; box-sizing: border-box;
+   padding: 0; margin: 0; box-sizing: border-box;
 }
-body{
-   color: #333; background: #fff; font-size: 16px; font-family: Arial, Helvetica, sans-serif;
+html, body{
+   font-size: 16px; color: #333; font-family: Arial, Helvetica; background: #f9f9f9;
 }
 /* Header */
 header{
-   background: #999; width: 100%; height: 60px; background: rgba(67, 42, 18, 1); position: fixed; top: 0;
+   width: 100%; height: 140px; background: transparent; position: absolute; top: 0;
 }
 nav{
-   margin: 0 auto; max-width: 960px; display: flex; padding: 0 20px;
+   max-width: 1000px; height: 100%; background: transparent; margin: 0 auto; font-size: 1.2rem; font-weight: 400; display: flex; align-items: center; border-bottom: solid #fff 2px;
 }
-.nav-icon{
-   width: 100%; display: flex; justify-content: space-between;
+.nav-left{
+   list-style: none; display: flex; flex: 2; margin: 0 20px; justify-content: space-between;
 }
-#logo{
-   width: 100px; height: 100px; margin-top: 5px;
+.nav-left a{
+   color: #fff; text-decoration: none;
 }
-#burger{
-   width: 45px; height: 30px; margin: 15px 0;
+.logo{
+   margin: 0 100px;
 }
-#nav-mobile{
-   list-style: none; display: none;
+.logo>img{
+   width: 130px; margin: 0 auto; flex: 1;
 }
-#nav-mobile a{
-   color: #333; text-decoration: none; font-weight: bold;
+.nav-right{
+    list-style: none; display: flex; flex: 2; margin: 0 20px; justify-content: space-between;
 }
-#nav{
-   display: none;
-}
-/* Main */
-#main{
-   display: grid; grid-template-columns: 1fr; grid-gap: 50px;
+.nav-right a{
+   color: #fff; text-decoration: none;
 }
 /* Banner */
 .banner{
-   width: 100%; height: 100vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/banner1.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
+   width: 100%; height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/banner.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
 }
 .banner-wrap{
-   margin: 0 auto; max-width: 960px; display: flex; justify-content: center; align-items: center; height: 100%; flex-direction: column; text-align: center;
+   max-width: 1000px; height: 100%; margin: 0 auto; color: #fff; display: flex; flex-direction: column;
 }
 .banner-wrap h1{
-   color: #fff; font-size: 2.6rem; margin: 20px 0; padding: 0 20px;
+   font-size: 2.3rem; font-weight: bold;
 }
-.banner-wrap p{
-   color: #fff; font-size: 1.5rem; margin: 5px 0; padding: 0 20px;
+.banner-text1{
+   height: 100%; display: flex; align-items: flex-end;
+}
+.banner-text2{
+   height: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+}
+.banner-text2 p{
+    margin-bottom: 7px; font-size: 1.3rem;
 }
 /* Location */
 .location{
    width: 100%;
 }
 .location-wrap{
-   max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr; grid-gap: 30px;
+   max-width: 1000px; margin: 0 auto;
 }
 .location-wrap h1{
-   text-align: center; font-size: 1.6rem; margin-bottom: 10px;
+   margin: 40px; text-align: center;
 }
-.location-wrap p{
-   font-size: 1.4rem; padding: 0 20px;
+.location-wrap img{
+   width: 100%; height: 550px; margin-bottom: 30px;
 }
-.location-img{
-   width: 100%; height: 400px; background-image: url("images/shakkyscafe.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
-}
-.location-wrap h2{
-   font-size: 1.1rem; padding: 0 20px;
+.location-number{
+   margin: 20px 0;
 }
 /* Footer */
 footer{
-   width: 100%; height: 60px; margin-top: 50px; border-top: solid 1px #999;
+   width: 100%; background: #333; color: #fff; padding: 60px 0; font-size: 1.1rem; margin-top: 70px;
 }
 .footer-wrap{
-   margin: 0 auto; max-width: 960px; height: 100%; display: flex; align-items: center; justify-content: center;
+   max-width: 1000px; margin: 0 auto; text-align: center
 }
-/* Responsive Tablet */
-@media(min-width:700px) {
-   /* Header */
-   #burger{
-      display: none;
-   }
-   #nav{
-      width: 600px; list-style-type: none; display: flex; justify-content: space-between;
-   }
-   #nav a{
-      text-decoration: none; color: #fff;  font-size: 1.1rem; display: block; padding: 10px; margin: 10px 0;
-   }
-   #logo{
-      width: 120px; height: 120px;
-   }
-   /* Location */
-   .location-img{
-      height: 500px;
-   }
+/* ======================================================================================= */
+/* ========================================= Menu ======================================== */
+/* ======================================================================================= */
+.main-menu{
+   /*background: #1E130F;*/
 }
-@media(min-width: 960px) {
-   /* Header */
-   nav{
-      padding: 0;
-   }
-   /* Location */
-   .location-wrap h2{
-      padding: 0;
-   }
-   .location-wrap p{
-      padding: 0;
-   }
-}
-/*============================================================================================*/
-/*========================================= Menu Page ========================================*/
-/*============================================================================================*/
-/* Main */
-#menu-main{
-   display: grid; grid-template-columns: 1fr;
-}
-/* Banner */
 .menu-banner{
-   width: 100%; height: 100vh; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/menubanner.jpeg"); background-position: center; background-size: cover; background-repeat: no-repeat;
+   width: 100%; height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/banner-menu.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
 }
 .menu-banner-wrap{
-   margin: 0 auto; max-width: 960px; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;
+   max-width: 1000px; height: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: center;
 }
-.menu-banner-wrap > h1{
-   font-size: 2.4rem; color: #fff; padding: 20px; margin-top: 50px;
+.menu-banner-wrap h1{
+   color: #fff; font-size: 3.5rem;
 }
-/* Espresso */
-.menu-espresso-wrap{
-   display: grid; grid-template-columns: 1fr;
+.menu-items{
+   margin-top: -100px;
 }
-.menu-espresso-box{
-   width: 100%; height: 280px; display: grid; grid-template-columns: 1fr 1fr; padding: 20px;
+.menu-items-wrap{
+   max-width: 1000px; margin: 0 auto;
 }
-.menu-espresso-text{
-   display: flex; flex-direction: column; justify-content: center;
+/* Delicacies */
+.menu-blocks{
+   width: 900px; margin: 0 auto; background: #fff; border-radius: 10px; overflow: hidden;
 }
-.menu-espresso-text > h1{
-   font-size: 1.8rem; margin-bottom: 10px;
+.menu-block{
+   display: grid; grid-template-columns: 1fr 1fr; color: #333; grid-gap: 30px;
 }
-.menu-espresso-text > a{
-   font-size: 1.3rem; text-decoration: none; color: #fff; background: #333; border: solid 2px #333;; padding: 5px; text-align: center; width: 130px;
+.menu-block img{
+   width: 450px;
 }
-#espresso-0{
-   background-image: url("images/1.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.menu-block-text{
+   padding: 25px; display: flex; justify-content: center; align-items: flex-start; flex-direction: column;
 }
-#espresso-1{
-   background-image: url("images/2.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.menu-block-text h2{
+   font-size: 2.3rem;
 }
-#espresso-2{
-   background-image: url("images/3.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.menu-block-text p{
+   margin: 20px 0;
 }
-#espresso-3{
-   background-image: url("images/4.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.menu-block-text a{
+   color: #333; text-decoration: none; font-size: 1.2rem; padding: 7px 10px; border: solid #333 1px;
 }
-#espresso-4{
-   background-image: url("images/5.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+/* ======================================================================================= */
+/* ======================================= Espresso ====================================== */
+/* ======================================================================================= */
+.espresso-banner{
+   width: 100%; height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("images/banner-espresso.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
 }
-#espresso-5{
-   background-image: url("images/6.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.espresso-banner-wrap{
+   max-width: 1000px; height: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: center;
 }
-#espresso-6{
-   background-image: url("images/7.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.espresso-banner-wrap{
+   color: #fff; font-size: 3rem;
 }
-#espresso-7{
-   background-image: url("images/8.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+/* Espresso Items */
+.espresso-wrap{
+   max-width: 1000px; margin: 0 auto;
 }
-#espresso-8{
-   background-image: url("images/9.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.espresso-items{
+   display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; margin-top: 50px;
 }
-#espresso-9{
-   background-image: url("images/10.png"); background-position: center; background-size: cover; background-repeat: no-repeat;
+.espresso-item{
+   padding: 10px;
 }
-@media(min-width:700px) {
-   .menu-espresso-wrap{
-      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-   }
-   .menu-banner-wrap > h1{
-      font-size: 4rem; color: #fff; padding: 20px;
-   }
+.espresso-item b{
+   font-size: 1.2rem;
 }
-@media(min-width:960px) {
-   .menu-espresso-box{
-      padding: 50px;
-   }
+.espresso-item p{
+   font-size: 1.1rem; margin-top: 10px;
 }
-
-
-
-
-
+/* ======================================================================================= */
+/* ======================================= Brewed ====================================== */
+/* ======================================================================================= */
+.brewed-banner{
+   width: 100%; height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("images/banner-brewed.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+.brewed-banner-wrap{
+   max-width: 1000px; height: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: center;
+}
+.brewed-banner-wrap{
+   color: #fff; font-size: 3rem;
+}
+/* Espresso Items */
+.brewed-wrap{
+   max-width: 1000px; margin: 0 auto;
+}
+.brewed-items{
+   display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; margin-top: 50px;
+}
+.brewed-item{
+   padding: 10px;
+}
+.brewed-item b{
+   font-size: 1.2rem;
+}
+.brewed-item p{
+   font-size: 1.1rem; margin-top: 10px;
+}
+/* ======================================================================================= */
+/* ====================================== Kids Menu ====================================== */
+/* ======================================================================================= */
+.kids-menu-banner{
+   width: 100%; height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("images/banner-kids-menu.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
+}
+.kids-menu-banner-wrap{
+   max-width: 1000px; height: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: center;
+}
+.kids-menu-banner-wrap{
+   color: #fff; font-size: 3rem;
+}
+/* Espresso Items */
+.kids-menu-wrap{
+   max-width: 1000px; margin: 0 auto;
+}
+.kids-menu-items{
+   display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; margin-top: 50px;
+}
+.kids-menu-item{
+   padding: 10px;
+}
+.kids-menu-item b{
+   font-size: 1.2rem;
+}
+.kids-menu-item p{
+   font-size: 1.1rem; margin-top: 10px;
+}

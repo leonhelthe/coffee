@@ -1,0 +1,42 @@
+[
+   {
+      "name": "Americano",
+      "price": "130"
+   },
+   {
+      "name": "Blondie",
+      "price": "100"
+   },
+   {
+      "name": "Latte",
+      "price": "130"
+   },
+   {
+      "name": "Caramel Latte",
+      "price": "130"
+   },
+   {
+      "name": "Vanilla Latte",
+      "price": "130"
+   },
+   {
+      "name": "Mocha",
+      "price": "130"
+   },
+   {
+      "name": "Capuccino",
+      "price": "130"
+   },
+   {
+      "name": "Matcha Latte",
+      "price": "130"
+   },
+   {
+      "name": "Tea Latte",
+      "price": "130"
+   },
+   {
+      "name": "Iced Toddy",
+      "price": "130"
+   }
+]

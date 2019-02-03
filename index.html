@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="app">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="device=device-width, initial-scale=1">
@@ -56,11 +56,19 @@
             </div>
          </div>
          <!-- Menu -->
-         <section class="menu-container">
+         <section class="menu-container" ng-controller="myController">
             <div class="menu-wrap wrap">
                <div class="menu">
                   <h1>Our best positions in menu</h1>
                   <div class="menu-list">
+                     <div class="menu-box" ng-repeat="coffee in coffees">
+                        <div>
+                           <h2>{{coffee.name}}</h2>
+                           <h2 class="price">&#8369;{{coffee.price}}</h2>
+                        </div>
+                        <p>espresso and hot water</p>
+                     </div>
+                     <!--
                      <div class="menu-box">
                         <div>
                            <h2>Americano</h2>
@@ -130,7 +138,7 @@
                            <h2 class="price">&#8369;110</h2>
                         </div>
                         <p>cold-brew coffee - very smooth</p>
-                     </div>
+                     </div>-->
                   </div>
                </div>
             </div>

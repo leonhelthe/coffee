@@ -1,8 +1,7 @@
-const app = angular.module("myApp", []);
+const app = angular.module('myApp', []);
 
-app.controller("myController", function($scope, $http){
-   $scope.coffees = [];
-   $http.get('./coffee.json').then(function(data){
-      $scope.coffees = data.data;
-   })
-});
+app.controller('myCtrl', ['$scope', '$http', function($scope, $http){
+   $http.get('coffee.json').then(function(response){
+      $scope.coffee = response.data;
+   });
+}]);

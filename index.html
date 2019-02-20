@@ -9,194 +9,23 @@
       <link rel="stylesheet" href="style.css">
       <link rel="icon" href="images/">
 
-      <!-- Import Fonts -->
+      <!----- Import Fonts ----->
       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
    </head>
    <body>
-      <header ng-include="'header.html'">
+      <header ng-include="'includes/header.html'">
+         <!----- Header ----->
       </header>
-      <main>
-         <!-- Banner -->
-         <section class="banner-container">
-            <div class="banner-wrap wrap">
-               <h1>Your Cup of Sanity Awaits...</h1>
-               <a href="#" class="banner-menubttn">Menu</a>
-            </div>
-         </section>
-         <!-- Location -->
-         <div class="about-container">
-            <div class="about-wrap wrap">
-               <div class="about">
-                  <h1>Shakky's Cafe</h1>
-                  <div class="about-1">
-                     <img src="images/about-banner.jpg">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                  <div class="about-2">
-                     <div class="phone">
-                        <h2>Phone</h2>
-                        <p>(02) 123-4567</p>
-                     </div>
-                     <div class="location">
-                        <h2>Location</h2>
-                        <p>Felix Huertas cor. A.H. Lacson Street 1003, Santa Cruz, Manila, 1003 Metro Manila</p>
-                     </div>
-                     <div class="hours">
-                        <h2>Hours</h2>
-                        <p>M-F 5:00am - 12:00am</p>
-                        <p>S-S 6:00am - 10:00pm</p>
-                     </div>
-                  </div>
-                  <div class="map">
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7721.4074486710415!2d120.98227512208034!3d14.615946209170547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b50e7b1ae889%3A0xc2f5eb9b2d04cf9a!2sSM+City+San+Lazaro!5e0!3m2!1sen!2sph!4v1546505868294"></iframe>
-                     <a href="https://www.google.com/maps/place/SM+City+San+Lazaro/@14.625252,120.982122,14z/data=!4m5!3m4!1s0x0:0xc2f5eb9b2d04cf9a!8m2!3d14.6185252!4d120.9860573?hl=en-US" target="_blank" class="bttn-map">Get Directions</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- Menu -->
-         <section class="menu-container" ng-controller="myCtrl">
-            <div class="menu-wrap wrap">
-               <div class="menu">
-                  <h1>Our best positions in menu</h1>
-                  <div class="menu-list">
-                     <div class="menu-box" ng-repeat="coffees in coffee">
-                        <div>
-                           <h2>{{ coffees.name }}</h2>
-                           <h2 class="price">&#8369;{{ coffees.price }}</h2>
-                        </div>
-                        <p>espresso and hot water</p>
-                     </div>
-                     <!-- 
-                     <div class="menu-box">
-                        <div>
-                           <h2>Americano</h2>
-                           <h2 class="price">&#8369;130</h2>
-                        </div>
-                        <p>espresso and hot water</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Blondie</h2>
-                           <h2 class="price">&#8369;100</h2>
-                        </div>
-                        <p>espresso, steamed milk, caramel, white chocolate</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Latte</h2>
-                           <h2 class="price">&#8369;160</h2>
-                        </div>
-                        <p>espresso, steamed milk</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Caramel Latte</h2>
-                           <h2 class="price">&#8369;80</h2>
-                        </div>
-                        <p>espresso, steamed milk, caramel</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Vanilla Latte</h2>
-                           <h2 class="price">&#8369;115</h2>
-                        </div>
-                        <p>espresso, steamed milk, vanilla</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Mocha</h2>
-                           <h2 class="price">&#8369;110</h2>
-                        </div>
-                        <p>espresso, steamed milk, dark chocolate</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Capuccino</h2>
-                           <h2 class="price">&#8369;135</h2>
-                        </div>
-                        <p>espresso, steamed milk with heavy foam</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Matcha Latte</h2>
-                           <h2 class="price">&#8369;130</h2>
-                        </div>
-                        <p>quality Matcha with a little Brown Coconut Sugar</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Tea Latte</h2>
-                           <h2 class="price">&#8369;140</h2>
-                        </div>
-                        <p>steamed milk with brewed tea</p>
-                     </div>
-                     <div class="menu-box">
-                        <div>
-                           <h2>Iced Toddy</h2>
-                           <h2 class="price">&#8369;110</h2>
-                        </div>
-                        <p>cold-brew coffee - very smooth</p>
-                     </div>-->
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Gift Card -->
-         <section class="gift-container">
-            <div class="gift-wrap wrap">
-               <div class="gift">
-                  <img src="images/gift-reward.png">
-                  <div class="gift-text">
-                     <h1>Make every sip more rewarding</h1>
-                     <p>Join Shakky's Rewards™ to earn Gold level benefits like free drinks and food, get free refills, pay and order with your phone, and more.</p>
-                  </div>
-                  <div class="gift-bttn">
-                     <a href="#" class="bttn-join">Join Now</a>
-                     <a href="#" class="bttn-sign">Sign In</a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Gallery -->
-         <section class="gallery-container">
-            <div class="gallery-wrap wrap">
-               <div class="gallery">
-                  <img src="images/gallery1.jpeg">
-                  <img src="images/gallery2.jpeg">
-                  <img src="images/gallery4.jpeg">
-                  <img src="images/gallery5.jpeg">
-                  <img src="images/gallery7.jpeg">
-                  <img src="images/gallery8.jpeg">
-               </div>
-            </div>
-         </section>
+      <main ng-view>
+         <!----- Content ----->
       </main>
-      <footer>
-         <div class="footer-wrap wrap">
-            <div class="footer">
-               <div class="footer-social-container">
-                  <h2>Follow us on social</h2>
-                  <div class="footer-social">
-                     <a href="#" class="facebook"></a>
-                     <a href="#" class="twitter"></a>
-                     <a href="#" class="googleplus"></a>
-                     <a href="#" class="instagram"></a>
-                  </div>
-               </div>
-               <div class="footer-newsletter">
-                  <h1>Subscribe to our newsletter</h1>
-                  <p>Be the first to hear about new promotions and sales!</p>
-                  <input type="text" placeholder="Email Address">
-                  <button>Subscribe</button>
-               </div>
-            </div>
-               <p>&copy; 2019 Shakky's Cafe. All rights reserved. Developed By John Leonhel Ang</p>
-         </div>
+      <footer ng-include="'includes/footer.html'">
+         <!----- Footer ----->
       </footer>
-   <!-- Scripts -->
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
-   <script src="app.js"></script>
+   <!----- Scripts ----->
+   <script src="scripts/angular.min.js"></script>
+   <script src="scripts/angular-route.js"></script>
+   <script src="scripts/app.js"></script>
    </body>
 </html>
